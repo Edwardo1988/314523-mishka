@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Оформление заказа - Магазин «Мишка»</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="#" width="86" height="35" alt="Магазин «Мишка»">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__search" href="#">Поиск по сайту</a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__basket" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="page-title">Вязание на заказ</h1>
+      <form class="filter" method="post">
+        <div class="filter__wrapper">
+          <p class="filter__teaser">
+            Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+          </p>
+          <div class="filter__item item-buy">
+            <h3 class="item-buy__title">Тип</h3>
+            <div class="item-buy__type">
+              <input type="radio" name="type" id="interior" checked>
+              <label for="interior">Аксессуар для интерьера</label>
+            </div>
+            <div class="item-buy__type">
+              <input type="radio" name="type" id="child">
+              <label for="interior">Детская игрушка</label>
+            </div>
+          </div>
+          <div class="filter__item item-buy">
+            <h3 class="item-buy__title">Цвет</h3>
+            <div class="item-buy__colour">
+              <input type="checkbox" name="white" id="white" checked>
+              <label for="white">Белый</label>
+            </div>
+            <div class="item-buy__type">
+              <input type="checkbox" name="gray" id="gray" checked>
+              <label for="interior">Серый</label>
+            </div>
+            <div class="item-buy__colour">
+              <input type="checkbox" name="tiffany" id="tiffany">
+              <label for="white">«Тиффани»</label>
+            </div>
+            <div class="item-buy__colour">
+              <input type="checkbox" name="black" id="black">
+              <label for="white">Черный</label>
+            </div>
+            <div class="item-buy__colour">
+              <input type="checkbox" name="pink" id="pink">
+              <label for="white">Розовый</label>
+            </div>
+            <div class="item-buy__colour">
+              <input type="checkbox" name="orange" id="orange">
+              <label for="white">Оранжевый</label>
+            </div>
+          </div>
+          <div class="filter__item item-buy">
+            <h3 class="item-buy__title">ФИО</h3>
+            <div class="item-buy__type">
+              <label class="item-buy__type--label" for="name">Имя:</label>
+              <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+            </div>
+            <div class="item-buy__type">
+              <label class="item-buy__type--label" for="surname">Фамилия:</label>
+              <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+            </div>
+            <div class="item-buy__type">
+              <label class="item-buy__type--label" for="patronym">Отчество:</label>
+              <input type="text" name="patronym" id="patronym" placeholder="Отчество, если желаете">
+            </div>
+          </div>
+          <div class="filter__item item-buy">
+            <h3 class="item-buy__title">Тел</h3>
+            <div class="item-buy__type">
+              <input type="text" name="phone" id="phone" placeholder="+7 ХХХ ХХ ХХ*">
+            </div>
+          </div>
+          <div class="filter__item item-buy">
+            <h3 class="item-buy__title">E-mail</h3>
+            <div class="item-buy__type">
+              <input type="email" name="email" id="email" placeholder="Ваш Email*">
+            </div>
+          </div>
+          <div class="filter__item item-buy">
+            <h3 class="item-buy__title">Доп</h3>
+            <div class="item-buy__type">
+              <textarea class="item-buy__type--text" name="feedback-text" id="feedback-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
+          </div>
+          <small class="filter-legend"><sup>*</sup>Поля обязательны для заполнения</small>
+          <a class="filter-button button" href="#">Отправить заказ</a>
+        </div>
+      </form>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
