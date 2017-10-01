@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Оформление заказа - Магазин «Мишка»</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body">
 
     <header class="page-header">
       <a class="page-header__logo">
@@ -34,7 +36,7 @@
     </header>
 
     <main class="page-main">
-      <h1 class="page-title">Вязание на заказ</h1>
+      <h1 class="page-main__title"><span class="page-main__title--form">Вязание на заказ</span></h1>
       <form class="filter" method="post">
         <div class="filter__wrapper">
           <p class="filter__teaser">
@@ -57,7 +59,7 @@
               <input type="checkbox" name="white" id="white" checked>
               <label for="white">Белый</label>
             </div>
-            <div class="item-buy__type">
+            <div class="item-buy__colour">
               <input type="checkbox" name="gray" id="gray" checked>
               <label for="interior">Серый</label>
             </div>
@@ -111,8 +113,8 @@
               <textarea class="item-buy__type--text" name="feedback-text" id="feedback-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </div>
-          <small class="filter-legend"><sup>*</sup>Поля обязательны для заполнения</small>
-          <a class="filter-button button" href="#">Отправить заказ</a>
+          <small class="filter__legend"><sup>*</sup>Поля обязательны для заполнения</small>
+          <a class="filter__button button" href="#">Отправить заказ</a>
         </div>
       </form>
 
