@@ -1,7 +1,18 @@
 .site-list {
+  display: flex;
   background-color: yellow;
 }
 
-.site-list__item {
 
+@media (min-width: @tablet-width) {
+  .site-list__item {
+    width: 167px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .site-list__item {
+    width: 188px;
+  }
 }

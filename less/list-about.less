@@ -7,3 +7,40 @@
   line-height: 20px;
   font-weight: 700;
 }
+
+@media (min-width: @tablet-width) {
+  .list-about {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .list-about__item {
+    width: 50%;
+    flex-wrap: wrap;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .list-about {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .list-about__item {
+    width: 50%;
+    list-style-type: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .list-about {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .list-about__item {
+    width: 50%;
+    list-style-type: none;
+  }
+}
